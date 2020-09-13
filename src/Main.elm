@@ -81,7 +81,7 @@ view model =
                            , style "border" "none"
                            , style "border-radius" "3px"
                            ]   
-                           [ img [ src "/images/menu.png"
+                           [ img [ src "/assets/images/menu.png"
                                  , style "width" "27px"
                                  , style "height" "27px" 
                                  ] [ ] 
@@ -145,7 +145,7 @@ menu =
               , style "padding" "40px"
               ] 
               [ div [ ]
-                    [ img [ src "/images/Portrait.jpg"
+                    [ img [ src "/assets/images/Portrait.jpg"
                           , style "width" "75%"
                           , style "height" "75%" 
                           , style "padding-bottom" "20px"
@@ -165,7 +165,7 @@ instaSection =
         , style "display" "inline"
         ]
         [ a [ href "https://www.instagram.com/bianca.coms", target "_blank"]
-            [ img [ src "/images/instagram.png"
+            [ img [ src "/assets/images/instagram.png"
                   , style "width" "20px"
                   , style "height" "20px" 
                   ] [ ]
@@ -178,7 +178,7 @@ linkedinSection =
         , style "display" "inline"
         ]
         [ a [ href "https://www.linkedin.com/in/bianca-comanescu/", target "_blank" ]
-            [ img [ src "/images/linkedin.png"
+            [ img [ src "/assets/images/linkedin.png"
                   , style "width" "20px"
                   , style "height" "20px" 
                   ] [ ]
@@ -191,7 +191,7 @@ githubSection =
         , style "display" "inline"
         ]
         [ a [ href "https://github.com/biancacomanescu97", target "_blank" ]
-            [ img [ src "/images/github.png"
+            [ img [ src "/assets/images/github.png"
                   , style "width" "22px"
                   , style "height" "22px" 
                   ] [ ]
@@ -213,7 +213,7 @@ yoga =
         , style "height" "80%" 
         , style "display" "flex"
         ] 
-        [ video [ src "/videos/Yoga.mp4"
+        [ video [ src "/assets/videos/Yoga.mp4"
                 , style "width" "420px" 
                 , style "max-width" "100%"
                 , style "height" "auto"
