@@ -235,8 +235,8 @@ yoga =
                     [ text """The system presents a self-teaching software which allows the user to perfect their
                         movements. The aim of this project is to compute the similarity between two poses, 
                         one captured by the web-camera and one chosen by the user.""" ]    
-              , a [ href "To be continued...", target "_blank" ] 
-                  [ button [ style "font-family" "Lucida Console, Courier, monospace" 
+              , a [ href "https://github.com/biancacomanescu97/lilt", target "_blank" ] 
+                    [ button [ style "font-family" "Lucida Console, Courier, monospace" 
                            , style "font-size" "20px"
                            , style "position" "absolute"
                            , style "right" "0"
@@ -248,6 +248,7 @@ yoga =
                            , style "padding" "8px"
                            ] 
                            [ text "Try it out!"]   
-                  ]
+                    ]
+                  
               ]
         ]
