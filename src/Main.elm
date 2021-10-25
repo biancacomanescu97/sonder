@@ -226,15 +226,14 @@ yoga =
                     , style "font-size" "40px"
                     , style "display" "block"
                     ] 
-                    [ text "Yoga" ] 
+                    [ text "Lilt" ] 
               , div [ style "font-family" "Lucida Console, Courier, monospace" 
                     , style "font-size" "20px"
                     , style "text-align" "justify"
                     , style "padding-top" "40px"
                     ] 
-                    [ text """Web-based platform for everyone keen to learn more about yoga
-                        techniques. The system presents a self-teaching software which allows the user to perfect their
-                        posture. The aim of this project is to compute the similarity between two poses, 
+                    [ text """The system presents a self-teaching software which allows the user to perfect their
+                        movements. The aim of this project is to compute the similarity between two poses, 
                         one captured by the web-camera and one chosen by the user.""" ]    
               , a [ href "To be continued...", target "_blank" ] 
                   [ button [ style "font-family" "Lucida Console, Courier, monospace" 
