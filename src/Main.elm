@@ -213,11 +213,11 @@ yoga =
         , style "height" "80%" 
         , style "display" "flex"
         ] 
-        [ video [ src "/assets/videos/Yoga.mp4"
-                , style "width" "420px" 
-                , style "max-width" "100%"
-                , style "height" "auto"
-                ] [ ]
+        [ img [ src "/assets/images/Lilt.jpg"
+              , style "width" "420px" 
+              , style "max-width" "100%"
+              , style "height" "auto"
+              ] [ ]
         , div [ style "position" "relative"
               , style "padding-top" "40px"
               , style "padding-left" "40px" 
