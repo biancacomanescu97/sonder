@@ -254,7 +254,7 @@ flow =
                              , style "border-radius" "3px"
                              , style "padding" "8px"
                              ] 
-                             [ text "Coming soon!"]   
+                             [ text "Access repository"]   
                     ]
               ]
         ]
@@ -296,7 +296,7 @@ glow =
                            , style "border-radius" "3px"
                            , style "padding" "8px"
                            ] 
-                           [ text "Try it out!" ]
+                           [ text "Access Trello board" ]
                    ]       
               ]
         , video [ src "/assets/videos/Skincare.mp4"
@@ -345,7 +345,7 @@ lilt =
                            , style "border-radius" "3px"
                            , style "padding" "8px"
                            ] 
-                           [ text "Try it out!"]   
+                           [ text "Access repository"]   
                     ]
                   
               ]
