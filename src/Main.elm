@@ -205,10 +205,10 @@ container =
         , style "margin-left" "127px"
         , style "margin-right" "127px"
         ] 
-        [ yoga ]
+        [ lilt ]
 
-yoga : Html Msg
-yoga = 
+lilt : Html Msg
+lilt = 
     div [ style "width" "100%"
         , style "height" "80%" 
         , style "display" "flex"
