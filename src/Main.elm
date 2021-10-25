@@ -226,7 +226,7 @@ yoga =
                     , style "font-size" "40px"
                     , style "display" "block"
                     ] 
-                    [ text "Lilt" ] 
+                    [ text "LILT" ] 
               , div [ style "font-family" "Lucida Console, Courier, monospace" 
                     , style "font-size" "20px"
                     , style "text-align" "justify"
