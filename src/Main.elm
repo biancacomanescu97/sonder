@@ -5,6 +5,7 @@ import Browser
 import Html exposing (Html, div, button, img, a, text)
 import Html.Attributes exposing (style, src, href, target)
 import Html.Events exposing (onClick)
+import Html exposing (video)
 
 type alias Model =
     { style : Animation.State }
@@ -93,6 +94,7 @@ view model =
                   , style "height" "100%"  
                   , style "top" "0"
                   , style "right" "0"
+                  , style "overflow" "auto"
                   ] 
                   [ container ]
             ]
@@ -205,17 +207,111 @@ container =
         , style "margin-left" "127px"
         , style "margin-right" "127px"
         ] 
-        [ lilt ]
+        [ flow
+        , glow
+        , lilt
+        ]
+
+flow : Html Msg
+flow = 
+    div [ style "width" "100%"
+        , style "height" "80%" 
+        , style "display" "flex"
+        , style "padding-bottom" "120px"
+        ] 
+        [ video [ src "/assets/videos/Yoga.mp4"
+                , style "width" "380px" 
+                , style "height" "auto"
+                ] [ ]
+        , div [ style "position" "relative"
+              , style "padding-top" "40px"
+              , style "padding-left" "40px" 
+              ]
+              [ div [ style "font-family" "Lucida Console, Courier, monospace" 
+                    , style "font-size" "40px"
+                    , style "display" "block"
+                    ] 
+                    [ text "FLOW" ] 
+              , div [ style "font-family" "Lucida Console, Courier, monospace" 
+                    , style "font-size" "20px"
+                    , style "text-align" "justify"
+                    , style "padding-top" "40px"
+                    ] 
+                    [ text """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""" ]    
+              , div [ ] 
+                    [ button [ style "font-family" "Lucida Console, Courier, monospace" 
+                             , style "font-size" "20px"
+                             , style "position" "absolute"
+                             , style "right" "0"
+                             , style "bottom" "0"
+                             , style "background-color" "black"
+                             , style "color" "white"
+                             , style "border" "none"
+                             , style "border-radius" "3px"
+                             , style "padding" "8px"
+                             ] 
+                             [ text "Coming soon!"]   
+                    ]
+              ]
+        ]
+
+glow : Html Msg
+glow = 
+    div [ style "width" "100%"
+        , style "height" "80%" 
+        , style "display" "flex"
+        , style "padding-bottom" "120px"
+        ] 
+        [ div [ style "position" "relative"
+              , style "padding-top" "40px"
+              , style "padding-right" "40px"
+              ]
+              [ div [ style "font-family" "Lucida Console, Courier, monospace" 
+                    , style "font-size" "40px"
+                    , style "display" "block"
+                    ] [ text "GLOW" ] 
+              , div [ style "font-family" "Lucida Console, Courier, monospace" 
+                    , style "font-size" "20px"
+                    , style "text-align" "justify"
+                    , style "padding-top" "40px"
+                    ] 
+                    [ text """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""" ]    
+              , button [ style "font-family" "Lucida Console, Courier, monospace" 
+                       , style "font-size" "20px"
+                       , style "position" "absolute"
+                       , style "left" "0"
+                       , style "bottom" "0"
+                       , style "background-color" "black"
+                       , style "color" "white"
+                       , style "border" "none"
+                       , style "border-radius" "3px"
+                       , style "padding" "8px"
+                       ] 
+                       [ text "Try it out!" ]    
+              ]
+        , video [ src "/assets/videos/Skincare.mp4"
+                , style "width" "380px" 
+                , style "height" "auto"
+                ] [ ]
+        ]
 
 lilt : Html Msg
 lilt = 
     div [ style "width" "100%"
         , style "height" "80%" 
         , style "display" "flex"
+        , style "padding-bottom" "75px"
         ] 
         [ img [ src "/assets/images/Lilt.jpg"
-              , style "width" "420px" 
-              , style "max-width" "100%"
+              , style "width" "380px" 
               , style "height" "auto"
               ] [ ]
         , div [ style "position" "relative"
