@@ -283,19 +283,21 @@ glow =
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""" ]    
-              , button [ style "font-family" "Lucida Console, Courier, monospace" 
-                       , style "font-size" "20px"
-                       , style "position" "absolute"
-                       , style "left" "0"
-                       , style "bottom" "0"
-                       , style "background-color" "black"
-                       , style "color" "white"
-                       , style "border" "none"
-                       , style "border-radius" "3px"
-                       , style "padding" "8px"
-                       ] 
-                       [ text "Try it out!" ]    
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""" ]
+              , a [ href "https://trello.com/b/00PitKkB/skincare", target "_blank" ]
+                  [ button [ style "font-family" "Lucida Console, Courier, monospace" 
+                           , style "font-size" "20px"
+                           , style "position" "absolute"
+                           , style "left" "0"
+                           , style "bottom" "0"
+                           , style "background-color" "black"
+                           , style "color" "white"
+                           , style "border" "none"
+                           , style "border-radius" "3px"
+                           , style "padding" "8px"
+                           ] 
+                           [ text "Try it out!" ]
+                   ]       
               ]
         , video [ src "/assets/videos/Skincare.mp4"
                 , style "width" "380px" 
