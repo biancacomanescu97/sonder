@@ -2,7 +2,7 @@ module Main exposing (Model, Msg(..), Styles, init, main, styles, subscriptions,
 
 import Animation exposing (px)
 import Browser
-import Html exposing (Html, div, button, img, video, a, text)
+import Html exposing (Html, div, button, img, a, text)
 import Html.Attributes exposing (style, src, href, target)
 import Html.Events exposing (onClick)
 
